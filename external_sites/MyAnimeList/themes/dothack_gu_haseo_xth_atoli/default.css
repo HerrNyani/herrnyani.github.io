@@ -1,0 +1,236 @@
+/* 
+* MyAnimeList Style: .hack//G.U. - Haseo Xth form and Atoli
+*
+* CSS written by HerrNyani
+*
+* Background image by .hack Conglomerate 
+* http://static.skynetblogs.be/media/37519/434231324.3.jpg
+*
+* Font "dothack//FONT" by unknown
+* http://www.jbfdesigns.com/font-10511-dothack__font.html
+*
+* Designed for 1600x1200 and 1920x1080 resolutions.
+*/
+
+
+*{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-size:100%;
+    font-family:"Arial Black", Gadget, sans-serif;
+    background-image:url('dotHack_GU_HaseoXth_Atoli_Wallpaper.jpg');
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-attachment:fixed;
+    background-color:#281E14;
+}
+
+table{
+    border-left:solid 2px #281E14;
+    border-right:solid 2px #281E14;
+}
+
+table a{
+    color:#000;
+    text-decoration: none;
+}
+
+table a:hover{
+    text-decoration:underline;
+}
+
+/* Container for anime list */
+div#list_surround{
+    width:750px;
+    margin-left:15px;
+}
+
+/* Watching, dropped,... menu */
+div#list_surround>table:first-of-type{
+    display:none;
+}
+
+
+/* Common header titles. Div is wrapped in table. Don't put positioning here. */
+div.header_title{
+    font-size:200%;
+    text-align:center;
+    font-weight:bold;
+    
+    color:#FFF;
+    padding:5px;
+}
+
+
+/* --- Header tables. Apply positioning, image replacement here. ---*/
+
+/* common positioning for bg images*/
+.header_cw, .header_completed, .header_onhold, .header_dropped, .header_ptw{
+    background-color:#3C3228;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin-top:25px;
+    border-top:solid 2px #281E14;
+}
+/* Hide text (image replacement)*/
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span{
+    visibility:hidden;
+}
+
+
+/* Watching header */
+.header_cw{
+    background-image:url('title_watching.png');
+}
+
+.header_completed{
+    background-image:url('title_completed.png');
+}
+
+.header_onhold{
+    background-image:url('title_onhold.png');
+}
+
+.header_dropped{
+    background-image:url('title_dropped.png');
+}
+/* Plan to watch header */
+.header_ptw{
+    background-image:url('title_ptw.png');
+}
+
+
+
+/* --- Anime list tables --- */
+
+tr>td.table_header{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+tr>td.table_header:first-of-type,
+tr>td.td1:first-of-type,
+tr>td.td2:first-of-type{
+    padding-left:5px;
+}
+
+tr>td:nth-of-type(2),
+tr>td:nth-of-type(3),
+tr>td:nth-of-type(4){
+    width:75px;
+}
+
+/* category table headers. Common style. */
+td.table_header{
+    font-size:90%;
+    font-weight:bold;
+    background-color:rgb(234,223,178);
+}
+
+/* Score info list (can be used as hover tip) */
+div#infoscore{
+    display:none;
+}
+
+/* Anime type list (can be used as hover tip) */
+div#infotype{
+    display:none;
+}
+
+td.td1, td.td2{
+    font-size:90%;
+    background-color:#FFF;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+/* Airing/not yet aired text */
+td.td1>small, td.td2>small{
+    font-size:90%;
+    font-style:italic;
+    font-weight:bold;
+}
+
+td.td1>small:before, td.td2>small:before{
+    content:" -- ";
+}
+
+/* Highlight row on hover */
+/*tr:hover>td.td1,tr:hover>td.td2{
+    background-color:#FFF;
+}*/
+
+/* Hidden "more" content */
+div.hide{
+    width:100%;
+}
+td.borderRBL{
+    background-color:#3C3228;
+    color:#FFF;
+    padding:3px;
+    padding-left:25px;
+}
+
+td.borderRBL a{
+    color:white;
+    text-decoration:underline;
+}
+
+td.borderRBL small{
+    display:inline-block;
+    margin-left:20px;
+    color:white;
+}
+
+/* --- Totals ---*/
+
+/* Category totals. comon style for every category */
+td.category_totals{
+    font-size:80%;
+    text-align:center;
+    background-color:#EADFB2;
+    border-top:solid 2px black;
+    border-bottom:solid 2px black;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+#mal_control_strip{
+    border: none 0px;
+}
+
+#mal_control_strip div input{
+    display:block;
+}
+
+#mal_cs_otherlinks{
+    width:auto;
+}
+
+/* Grand totals of all animes (#EPs, time watched etc.)*/
+div#grand_totals{
+    font-size:90%;
+    display:none;
+    width:100%;
+    text-align:center;
+}
+
+
+/* copyright - DO NOT REMOVE OR HIDE THIS DIV */
+#copyright
+{
+    font-size:85%;
+    background-color:#281E14;
+    color:#FFF;
+    text-align: center;
+    padding:6px;
+}
+
+#copyright a{
+    color:#FFF;
+}
