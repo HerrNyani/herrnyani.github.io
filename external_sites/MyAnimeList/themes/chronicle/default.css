@@ -1,0 +1,211 @@
+/*
+* MyAnimeList Style: Chronicle
+*
+* CSS written by fzeromaster
+*
+* Background image by Suzuhira Hiro 
+* http://www.zerochan.net/Chronicle+%E2%80%93+Suzuhira+Hiro+Artworks
+*
+* Designed for 1600x1200 and 1920x1080 resolutions.
+*/
+
+
+*{
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font-size:100%;
+}
+
+body{
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    background-image:url('chronicle_Suzuhira_Hiro.jpg');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-attachment:fixed;
+    background-color:black;
+}
+
+table a{
+    color:#000;
+    text-decoration: none;
+}
+
+table a:hover{
+    text-decoration:underline;
+}
+
+/* Container for anime list */
+div#list_surround{
+    width:920px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Watching, dropped,... menu */
+div#list_surround>table:first-of-type{
+    display:none;
+}
+
+
+/* Common header titles. Div is wrapped in table. Don't put positioning here. */
+div.header_title{
+    font-size:150%;
+    text-align:center;
+    font-weight:bold;
+    
+    /*background-color:#000;*/
+    color:#FFF;
+    
+    padding:5px;
+}
+
+
+/* --- Header tables. Apply positioning, image replacement here. ---*/
+
+/* common positioning for bg images*/
+.header_cw, .header_completed, .header_onhold, .header_dropped, .header_ptw{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:rgba(0,0,0,0.5);
+    padding:5px;
+}
+/* Hide text (image replacement)*/
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span{
+    visibility:hidden;
+}
+
+
+/* Watching header */
+.header_cw{    
+    margin-top:-20px;
+    background-image:url('title_watching.png');
+}
+
+.header_completed{
+    margin-top:20px;
+    background-image:url('title_completed.png');
+}
+
+.header_onhold{
+    margin-top:20px;
+    background-image:url('title_onhold.png');
+}
+
+.header_dropped{
+    margin-top:20px;
+    background-image:url('title_dropped.png');
+}
+/* Plan to watch header */
+.header_ptw{
+    margin-top:20px;
+    background-image:url('title_ptw.png');
+}
+
+
+
+/* --- Anime list tables --- */
+
+/* cell padding */
+td.table_header>a, td.td1>a, td.td2>a{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* category table headers. Common style. */
+td.table_header{
+    background-color:rgb(200,200,255);
+}
+
+/* Table header link text*/
+td.table_header .table_headerLink{
+    font-size:105%;
+    font-weight:bold;
+}
+
+/* Score info list (can be used as hover tip) */
+div#infoscore{
+    display:none;
+}
+
+/* Anime type list (can be used as hover tip) */
+div#infotype{
+    display:none;
+}
+
+/* Odd rows */
+td.td1{
+    font-size:95%;
+    background-color:#FFF;
+    background-color:rgba(255,255,255,0.9);
+}
+
+/* Even rows */
+td.td2{
+    font-size:95%;
+    background-color:#EEF;
+    background-color:rgba(230,230,255,0.9);
+}
+
+/* Airing/not yet aired text */
+td.td1>small, td.td2>small{
+    font-size:85%;
+    color:#E22;
+    font-weight:bold;
+}
+
+/* Highlight row on hover */
+tr:hover>td.td1,tr:hover>td.td2{
+    background-color:#FFF;
+}
+
+/* Hidden "more" content */
+div.hide{
+    width:100%;
+    border:solid black 1px;
+}
+td.borderRBL{
+    background-color:#FFF;
+    padding:3px;
+    padding-left:25px;
+}
+
+td.borderRBL a{
+    color:#00A;
+}
+
+td.borderRBL small{
+    color:#555;
+}
+
+/* --- Totals ---*/
+
+/* Category totals. Common style for every category */
+td.category_totals{
+    background-color:rgb(200,200,255);
+    border-top:solid 2px black;
+    text-align:center;
+}
+
+
+/* Grand totals of all animes (#EPs, time watched etc.)*/
+div#grand_totals{
+    display:none;
+    width:100%;
+    text-align:center;
+}
+
+
+/* copyright - DO NOT REMOVE OR HIDE THIS DIV */
+#copyright
+{
+    background-color:#000;
+    color:#FFF;
+    padding-top: 6px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#copyright a{
+    color:#FFF;
+}
