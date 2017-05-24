@@ -1,4 +1,5 @@
-#How to use MyAnimeList themes
+How to use MyAnimeList themes
+=============================
 
 - Log in
 - Go to your Account settings
