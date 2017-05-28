@@ -19,7 +19,7 @@
 
 body{
     font-family:"Trebuchet MS", Helvetica, sans-serif;
-    background-image:url('chronicle_Suzuhira_Hiro.jpg');
+    background-image:url('images/chronicle_Suzuhira_Hiro.jpg');
     background-repeat:no-repeat;
     background-position:center top;
     background-attachment:fixed;
@@ -79,27 +79,27 @@ div.header_title{
 /* Watching header */
 .header_cw{    
     margin-top:-20px;
-    background-image:url('title_watching.png');
+    background-image:url('images/title_watching.png');
 }
 
 .header_completed{
     margin-top:20px;
-    background-image:url('title_completed.png');
+    background-image:url('images/title_completed.png');
 }
 
 .header_onhold{
     margin-top:20px;
-    background-image:url('title_onhold.png');
+    background-image:url('images/title_onhold.png');
 }
 
 .header_dropped{
     margin-top:20px;
-    background-image:url('title_dropped.png');
+    background-image:url('images/title_dropped.png');
 }
 /* Plan to watch header */
 .header_ptw{
     margin-top:20px;
-    background-image:url('title_ptw.png');
+    background-image:url('images/title_ptw.png');
 }
 
 
