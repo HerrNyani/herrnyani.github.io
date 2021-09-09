@@ -1,0 +1,53 @@
+body { 
+	background-color: #111; margin:0px; 
+}
+
+article { 
+	width:900px; 
+	margin:auto; 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px;
+	border-left: 1px solid gray; 
+	border-right: 1px solid gray;
+	background-color: white;
+	font-family: serif
+}
+
+section {
+	margin-top: 20px; margin-bottom: 20px;
+}
+
+section>section {
+	margin-left: 15px;
+}
+
+/* Headers are assumed to be the first item in a section, hence the 0 margin-top. */
+h1 { font-size: 2em; margin-top: 0em; margin-bottom: .5em; }
+h2 { font-size: 1.5em; margin-top: 0em; margin-bottom: .5em; }
+h3 { font-size: 1.2em; margin-top: 1em; margin-bottom: .5em; }
+
+p { max-width: 550px; }
+
+aside { font-style: italic; }
+
+table { 
+	border-spacing: 1px; 
+	border-collapse: 
+	collapse; border: 
+	1px solid gray; 
+}
+
+tr:nth-child(odd) {background: #D2FFFF; }
+tr:nth-child(even) {background: white; }
+
+th { 
+	margin:0px; 
+	padding:5px; 
+	background: #DDD; 
+	border-left: 1px solid gray; 
+}
+th:nth-child(1) { border-left: 0px none; }
+
+td { margin:0px; padding:5px; border-left: 1px solid gray; }
+td:nth-child(1) { border-left: 0px none; }
